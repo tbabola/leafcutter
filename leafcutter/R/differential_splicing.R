@@ -81,9 +81,9 @@ differential_splicing=function(counts, x, confounders=NULL, max_cluster_size=10,
   names(cluster_sizes)=clu_names
 
   if (!debug) {
-    zz <- file( "/dev/null", open = "wt")
-    sink(zz)
-    sink(zz, type = "message")
+    #zz <- file( "/dev/null", open = "wt")
+    #sink(zz)
+    #sink(zz, type = "message")
   }
 
   results=foreach (cluster_name=clu_names, .errorhandling = "pass") %dopar% {
